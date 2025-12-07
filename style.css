@@ -1016,6 +1016,21 @@ noscript {
     line-height: 25px
 }
 
+.about-info p a {
+    color: var(--color-light-purple);
+    text-decoration: underline;
+    transition: all 0.3s ease
+}
+
+.about-info p a:hover {
+    color: var(--color-light-blue);
+    text-decoration: none
+}
+
+.about-info p a:visited {
+    color: var(--color-light-purple)
+}
+
 .dp {
     width: 40%;
     display: flex;
