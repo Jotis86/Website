@@ -868,7 +868,7 @@ noscript {
 }
 
 .resume-btn {
-    margin-top: 25px;
+    margin-top: 0;
     justify-content: flex-start;
     width: 45px;
     height: 45px;
@@ -1863,6 +1863,12 @@ footer {
     .project-boxes-div {
         padding: 40px 0
     }
+
+    .action-buttons-container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px
+    }
 }
 
 @media screen and (max-width:500px) {
@@ -2016,4 +2022,80 @@ footer {
         height: fit-content;
         margin-top: 100px;  
     }
+}
+
+/* Action Buttons Container - Para poner botones en paralelo */
+.action-buttons-container {
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
+    align-items: center;
+}
+
+/* Newsletter Button - Similar to Resume Button */
+.newsletter-btn {
+    margin-top: 0;
+    justify-content: flex-start;
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, .199);
+    background: linear-gradient(82.3deg, #965de9 10.8%, #6358ee 94.3%);
+    position: relative;
+    align-items: center;
+    transition-duration: .3s;
+    display: flex;
+    overflow: hidden;
+}
+
+.newsletter-btn .sign {
+    width: 100%;
+    transition-duration: .3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.newsletter-btn .sign svg {
+    width: 17px;
+}
+
+.newsletter-btn .sign svg path {
+    fill: white;
+}
+
+.newsletter-btn .text {
+    position: absolute;
+    right: 0%;
+    width: 0%;
+    opacity: 0;
+    color: white;
+    font-size: 1em;
+    font-weight: 600;
+    transition-duration: .3s;
+}
+
+.newsletter-btn:hover {
+    width: 145px;
+    border-radius: 40px;
+    transition-duration: .3s;
+}
+
+.newsletter-btn:hover .sign {
+    width: 30%;
+    transition-duration: .3s;
+    padding-left: 20px;
+}
+
+.newsletter-btn:hover .text {
+    opacity: 1;
+    width: 70%;
+    transition-duration: .3s;
+    padding-right: 10px;
+}
+
+.newsletter-btn:active {
+    transform: translate(2px, 2px);
 }
