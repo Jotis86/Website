@@ -44,6 +44,7 @@ body {
 .navbar,
 .project-box,
 .resume-btn,
+.newsletter-btn,
 footer {
     overflow: hidden
 }
@@ -832,6 +833,7 @@ noscript {
 }
 
 .resume-btn,
+.newsletter-btn,
 .sign {
     align-items: center;
     transition-duration: .3s;
@@ -2032,7 +2034,7 @@ footer {
     align-items: center;
 }
 
-/* Newsletter Button - Similar to Resume Button */
+/* Newsletter Button - Idéntico al Resume Button */
 .newsletter-btn {
     margin-top: 0;
     justify-content: flex-start;
@@ -2043,59 +2045,28 @@ footer {
     cursor: pointer;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, .199);
     background: linear-gradient(82.3deg, #965de9 10.8%, #6358ee 94.3%);
-    position: relative;
-    align-items: center;
-    transition-duration: .3s;
-    display: flex;
-    overflow: hidden;
-}
-
-.newsletter-btn .sign {
-    width: 100%;
-    transition-duration: .3s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.newsletter-btn .sign svg {
-    width: 17px;
-}
-
-.newsletter-btn .sign svg path {
-    fill: white;
-}
-
-.newsletter-btn .text {
-    position: absolute;
-    right: 0%;
-    width: 0%;
-    opacity: 0;
-    color: white;
-    font-size: 1em;
-    font-weight: 600;
-    transition-duration: .3s;
+    position: relative
 }
 
 .newsletter-btn:hover {
     width: 145px;
     border-radius: 40px;
-    transition-duration: .3s;
+    transition-duration: .3s
 }
 
 .newsletter-btn:hover .sign {
     width: 30%;
     transition-duration: .3s;
-    padding-left: 20px;
+    padding-left: 20px
 }
 
 .newsletter-btn:hover .text {
     opacity: 1;
     width: 70%;
     transition-duration: .3s;
-    padding-right: 10px;
+    padding-right: 10px
 }
 
 .newsletter-btn:active {
-    transform: translate(2px, 2px);
+    transform: translate(2px, 2px)
 }
